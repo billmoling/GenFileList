@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="GenFileNameList">
+</Property><Property Name="Solution File" Value="E:\Develop\SourceCode\GenFileNameList\GenFileNameList\GenFileNameList.sln">
+</Property><Property Name="Date" Value="2011年4月27日">
+</Property><Property Name="Time" Value="19:43">
+</Property></Properties><Event ErrorLevel="0" Project="GenFileNameList" Source="GenFileNameList\GenFileNameList.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="GenFileNameList" Source="GenFileNameList\GenFileNameList.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="GenFileNameList.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="GenFileNameList.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="GenFileNameList" Source="GenFileNameList\GenFileNameList.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>
