@@ -27,10 +27,11 @@ namespace GenFileNameList
             }
 
             DirectoryInfo di = new DirectoryInfo(textBox1.Text);
+            
 
             FileInfo[] fis = di.GetFiles("*.*",SearchOption.AllDirectories);
             List<string> nameList = new List<string>();
-
+           
             for (int i = 0; i < fis.Length; i++)
             {
                 nameList.Add(fis[i].Name);
@@ -38,13 +39,20 @@ namespace GenFileNameList
 
             CultureInfo StrokCi = new CultureInfo(133124);
             System.Threading.Thread.CurrentThread.CurrentCulture = StrokCi;
-            nameList.Sort();
+            
+            nameList.Sort(new AlphanumComparatorFast());
 
 
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < nameList.Count; i++)
             {
                 sb.Append(nameList[i] + "\r\n");
+                //sb.Append(string.Format("insert into PictureSet(PictureName,pictureDescription) values('{0}','{1}')", "gallary" + i, nameList[i]));
+
+                //sb.Append("\r\n");
+
+
+
             }
 
             textBox2.Text = sb.ToString();
